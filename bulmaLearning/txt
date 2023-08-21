@@ -1,0 +1,44 @@
+<div
+								key={index}
+								onClick={() => handleSelect({ item })}
+								className="column"
+							>
+								<div className="card">
+									<i className="card-main-icon">
+										<img className="icon" src={`/image/${item.option_icon}.svg`} />
+										{/* <Svg>
+											<use
+												className="icon"
+												xmlns="http://www.w3.org/2000/svg"
+												id="Type-combi"
+												xmlnsXlink="http://www.w3.org/1999/xlink"
+												xlinkHref="#type-standard"
+											/>
+										</Svg> */}
+									</i>
+									<div className="card-title">
+										<p style={{fontWeight:"600" , fontSize:"25px"}}>{item.option_title}</p>
+									</div>
+									<i className="card-info-icon">
+										<span className="help_icon">i</span>
+									</i>
+									<span className="card-select">Select</span>
+									<p className="card-info information subtitle is-5">
+										{item.option_discription}
+									</p>
+								</div>
+							</div>
+
+
+
+
+                            <Svg>
+                                <use
+                                  className="icon"
+                                  style={{ color: "#fb6058" }}
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  id="fuel-lpg"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                  xlinkHref={item.option_icon}
+                                />
+                              </Svg>
